@@ -161,7 +161,7 @@ def evaluate_model(model, X_test, y_test, feature_names):
     print(f"R² Score: {r2:.4f}  (closer to 1 = better)")
     print(f"RMSE: {rmse:.2f} dollars (average prediction error)")
 
-    # Feature Importance
+    # Feature importance = magnitude of coefficients
     importances = np.abs(model.coef_)
     sorted_idx = np.argsort(importances)[::-1]
 
@@ -237,7 +237,7 @@ if __name__ == "__main__":
     # Step 7: Compare predictions
     compare_predictions(y_test, predictions, num_examples=10)
 
-    # Step 8: Make a new prediction (example house)
+    # Step 8: Make a new prediction (example)
     make_prediction(model, sqft=1800, bedrooms=3, bathrooms=2, age=10)
 
     print("\n" + "=" * 70)
