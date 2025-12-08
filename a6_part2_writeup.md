@@ -7,13 +7,14 @@
 Based on your house price model, rank the four features from most important to least important. Explain how you determined this ranking.
 
 **YOUR ANSWER:**
-1. Most Important: 
-2. 
-3. 
-4. Least Important: 
+1. Most Important: Squarefeet
+2. Bathrooms
+3. Bedrooms
+4. Least Important: Age
 
 **Explanation:**
 
+I ordered them by largest correlation coefficent to lowest because the larger coefficent means it played a larger impact on pricing. 
 
 
 
@@ -24,10 +25,10 @@ Based on your house price model, rank the four features from most important to l
 Choose TWO features from your model and explain what their coefficients mean in plain English. For example: "Each additional bedroom increases the price by $___"
 
 **Feature 1:**
-
+Each additional bedroom increases thr pice by 
 
 **Feature 2:**
-
+Each additional bathroom increases the price by
 
 ---
 
